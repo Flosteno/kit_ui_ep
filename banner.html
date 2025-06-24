@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bannières</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/minty/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-light">
+
+    <div class="container py-5">
+
+  <!-- Grande bannière avec overlay sombre et contenu centré -->
+  <section class="position-relative text-white rounded mb-5" style="
+    background-image: url('https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  ">
+    <!-- Overlay sombre -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 rounded" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+
+    <!-- Contenu centré -->
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center px-3">
+      <h1 class="display-5 fw-bold text-primary">Découvrez les événements près de chez vous</h1>
+      <p class="lead text-white">Ne ratez plus jamais un concert, un festival ou une sortie culturelle.</p>
+      <a href="#" class="btn btn-light btn-lg mt-3">Voir les événements</a>
+    </div>
+  </section>
+
+  <!-- Petite bannière réduite avec image -->
+  <section
+  class="position-relative text-white rounded mb-5"
+  style="
+    background-image: url('https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    max-height: 200px;
+  "
+>
+    <!-- Overlay sombre -->
+    <div
+      class="position-absolute top-0 start-0 w-100 h-100"
+      style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5rem;"
+    ></div>
+
+    <!-- Contenu centré -->
+    <div
+      class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center"
+    >
+      <h2 class="fw-bold text-secondary">Bienvenue sur la page Événement</h2>
+      <p class="mb-0">Découvrez tous les détails et participez aux meilleurs événements</p>
+    </div>
+  </section>
+
+
+  </div>
+
+
+
+  </body>
+</html>

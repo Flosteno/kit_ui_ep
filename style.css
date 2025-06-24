@@ -1,0 +1,37 @@
+/* Style commun du kit UI */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Pour personnaliser certains composants */
+
+.banner-large {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+/* Formulaire */
+form label {
+  font-weight: 600;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+  color: #c9d1d9;
+}
+
+/* Commentaires : image arrondie */
+.card-body img.rounded-circle {
+  border: 2px solid #fff;
+}
+
+/* Organisme personnalisé */
+.list-group-item strong {
+  color: #2c7be5;
+}
