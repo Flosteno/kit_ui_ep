@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>EventProject - Cartes et Listes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/minty/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Carte utilisateur horizontale */
+    .card-horizontal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 120px;
+    }
+    .card-horizontal img {
+      width: 120px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+    .card-horizontal .card-body {
+      flex: 1;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-light py-5">
+
+  <div class="container">
+
+    <h2 class="mb-4">Les molécules : Cartes</h2>
+
+    <section>
+      <!-- Carte événement simple -->
+      <div class="mb-4" style="max-width: 300px;">
+        <div class="card shadow border-secondary">
+          <img src="https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg" class="card-img-top" alt="Concert" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Concert en plein air</h5>
+            <p class="card-text">Un concert exceptionnel avec vos artistes préférés.</p>
+            <p class="text-muted mb-0"><small>Ville : Paris</small></p>
+            <p class="text-muted"><small>Date : 15 juillet 2025</small></p>
+          </div>
+          <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-primary btn-sm">Détails</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carte utilisateur horizontale -->
+      <div class="mb-4" style="max-width: 500px;">
+        <div class="card shadow border-secondary card-horizontal">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marie Dupont</h5>
+            <p class="card-text mb-1">Participant depuis 2023</p>
+            <p class="text-muted small">Ville : Lyon</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carte événement avec prix et créateur -->
+      <div class="mb-4" style="max-width: 350px;">
+        <div class="card shadow border-secondary">
+          <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" class="card-img-top" alt="Festival" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Festival d'été</h5>
+            <p class="card-text">Musique, danse et animations pour toute la famille.</p>
+            <p class="text-muted mb-1"><small>Ville : Lyon</small></p>
+            <p class="text-muted mb-1"><small>Date : 22 août 2025</small></p>
+            <p class="text-muted mb-1"><small>Prix : 30€</small></p>
+            <p class="text-muted"><small>Créateur : Jean Martin</small></p>
+          </div>
+          <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-primary btn-sm">Détails</a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <h2 class="mb-4">Les organismes : Listes de cartes</h2>
+      <!-- Liste d'événements (cartes verticales en grille) -->
+      <h4 class="mb-3">Liste d'événements</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <!-- Carte événement 1 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg" class="card-img-top" alt="Concert" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Concert en plein air</h5>
+              <p class="card-text">Un concert exceptionnel avec vos artistes préférés.</p>
+              <p class="text-muted mb-0"><small>Ville : Paris</small></p>
+              <p class="text-muted"><small>Date : 15 juillet 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte événement 2 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" class="card-img-top" alt="Festival" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Festival d'été</h5>
+              <p class="card-text">Musique, danse et animations pour toute la famille.</p>
+              <p class="text-muted mb-0"><small>Ville : Lyon</small></p>
+              <p class="text-muted"><small>Date : 22 août 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte événement 3 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg" class="card-img-top" alt="Conférence" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Conférence Tech</h5>
+              <p class="card-text">Les dernières innovations technologiques expliquées.</p>
+              <p class="text-muted mb-0"><small>Ville : Toulouse</small></p>
+              <p class="text-muted"><small>Date : 10 septembre 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Liste d'utilisateurs (cartes horizontales) -->
+      <h4 class="mb-3">Liste des participants</h4>
+      <div class="d-flex flex-column gap-3">
+        <!-- Carte utilisateur 1 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Jean-Pierre Lemoine</h5>
+            <p class="card-text mb-1">Participant depuis 2022</p>
+            <p class="text-muted small">Ville : Paris</p>
+          </div>
+        </div>
+        <!-- Carte utilisateur 2 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marie Dupont</h5>
+            <p class="card-text mb-1">Participant depuis 2023</p>
+            <p class="text-muted small">Ville : Lyon</p>
+          </div>
+        </div>
+        <!-- Carte utilisateur 3 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marc André</h5>
+            <p class="card-text mb-1">Participant depuis 2021</p>
+            <p class="text-muted small">Ville : Marseille</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

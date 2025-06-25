@@ -24,29 +24,43 @@
       </div>
 
       <!-- Organisme : liste de commentaires -->
-      <div class="card shadow">
-        <div class="card-header">
-          <h5>Commentaires des participants</h5>
+       <section class="mb-5" id="comments">
+      <h2 class="h4 mb-3">Commentaires</h2>
+      <div class="border p-3 bg-white  rounded shadow-sm">
+        <div class="mb-3 d-flex align-items-start">
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            alt="Avatar Jean Dupont"
+            class="comment-avatar rounded-circle me-3" width="50" height="50"
+          />
+          <div>
+            <strong>Jean Dupont</strong> <br />
+            <small class="text-muted">Posté il y a 2 heures</small>
+            <p class="mt-2">Super événement, j’y retournerai avec plaisir !</p>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex">
-            <img src="https://i.pravatar.cc/50?u=2" alt="Avatar" class="rounded-circle me-3" width="50" height="50" />
-            <div>
-              <strong>Marie Curie</strong> <br />
-              Super expérience, à refaire !
-              <br /><small class="text-muted">Posté le 12 juin 2025</small>
-            </div>
-          </li>
-          <li class="list-group-item d-flex">
-            <img src="https://i.pravatar.cc/50?u=3" alt="Avatar" class="rounded-circle me-3" width="50" height="50" />
-            <div>
-              <strong>Paul Martin</strong> <br />
-              Bonne ambiance et accueil chaleureux.
-              <br /><small class="text-muted">Posté le 13 juin 2025</small>
-            </div>
-          </li>
-        </ul>
+        <div class="mb-3 d-flex align-items-start">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="Avatar Sophie Martin"
+            class="comment-avatar rounded-circle me-3" width="50" height="50"
+          />
+          <div>
+            <strong>Sophie Martin</strong> <br />
+            <small class="text-muted">Posté hier</small>
+            <p class="mt-2">Atelier très instructif et convivial. Merci !</p>
+          </div>
+        </div>
+
+        <form>
+          <div class="mb-3">
+            <label for="comment" class="form-label">Laisser un commentaire</label>
+            <textarea class="form-control" id="comment" rows="3"></textarea>
+          </div>
+          <button class="btn btn-secondary">Commenter</button>
+        </form>
       </div>
+    </section>
 
     </div>
 

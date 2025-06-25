@@ -107,6 +107,23 @@
       object-fit: cover;
       border-radius: 0.375rem;
     }
+
+    .card-horizontal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 120px;
+    }
+    .card-horizontal img {
+      width: 120px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+    .card-horizontal .card-body {
+      flex: 1;
+      padding-left: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -122,13 +139,14 @@
       <li><a href="presentation_resource.html">Présentation ressource</a></li>
       <li><a href="presentation_element.html">Présentation élément</a></li>
       <li><a href="schedule.html">Organisme personnalisé</a></li>
+      <li><a href="cards_lists.html">Cartes listes</a></li>
     </ul>
   </nav>
 
   <main class="content">
     <header class="text-center mb-5">
       <h1 class="display-4">🧩 UI Kit – Aperçu complet</h1>
-      <p class="lead">Toutes les molécules & organismes Eventbrite intégrés sur une seule page</p>
+      <p class="lead">Toutes les molécules & organismes EventProject intégrés sur une seule page</p>
     </header>
 
     <!-- Navbar -->
@@ -137,7 +155,7 @@
       <div class="border p-3 bg-white rounded shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Eventbrite</a>
+            <a class="navbar-brand" href="#">EventProject</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -163,7 +181,7 @@
       <h2 class="h4 mb-3">Footer</h2>
       <div class="border p-3 bg-white rounded shadow-sm">
         <footer class="bg-dark text-white text-center py-4">
-          <p class="mb-1">© 2025 Eventbrite Clone</p>
+          <p class="mb-1">© 2025 EventProject</p>
           <a href="#" class="text-white text-decoration-underline">Mentions légales</a>
         </footer>
       </div>
@@ -196,56 +214,178 @@
       </div>
     </section>
 
-    <!-- Bannière avec image festive -->
+    
+    <!-- Bannières modernes -->
     <section class="mb-5" id="banner">
-      <h2 class="h4 mb-3">Bannière</h2>
+      <h2 class="h4 mb-3">Bannières</h2>
       <div class="border p-3 bg-white rounded shadow-sm">
-        <div class="banner-image">
-          <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
-            alt="Image festive événements"
-          />
-          <div class="banner-text">
-            <h1>Fêtez vos événements avec style !</h1>
-            <p>Rejoignez la communauté Eventbrite et partagez vos moments.</p>
-            <a href="#" class="btn btn-light">Découvrir</a>
+
+        <!-- Grande bannière avec overlay sombre -->
+        <div class="position-relative text-white rounded mb-4" style="
+          background-image: url('https://plus.unsplash.com/premium_photo-1682401101972-5dc0756ece88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          background-size: cover;
+          background-position: center;
+          height: 300px;
+        ">
+          <div class="position-absolute top-0 start-0 w-100 h-100 rounded" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+          <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center px-3">
+            <h1 class="display-5 fw-bold text-primary">Découvrez les événements près de chez vous</h1>
+            <p class="lead text-white">Ne ratez plus jamais un concert, un festival ou une sortie culturelle.</p>
+            <a href="#" class="btn btn-light btn-lg mt-3">Voir les événements</a>
           </div>
         </div>
+
+        <!-- Petite bannière réduite -->
+        <div class="position-relative text-white rounded" style="
+          background-image: url('https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg');
+          background-size: cover;
+          background-position: center;
+          height: 30vh;
+          max-height: 200px;
+        ">
+          <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 0.5rem;"></div>
+          <div class="container h-100 d-flex flex-column justify-content-center align-items-center position-relative text-center">
+            <h2 class="fw-bold text-secondary">Bienvenue sur la page Événement</h2>
+            <p class="mb-0">Découvrez tous les détails et participez aux meilleurs événements</p>
+          </div>
+        </div>
+
       </div>
     </section>
+
 
     <!-- Cartes de présentation avec images réelles -->
     <section class="mb-5" id="cards">
       <h2 class="h4 mb-3">Cartes de présentation</h2>
+      
+
+    <section>
       <div class="border p-3 bg-white rounded shadow-sm">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card border-secondary">
-              <img
-                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80"
-                class="card-img-top"
-                alt="Concert Jazz"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Concert Jazz</h5>
-                <p class="card-text">Un concert exceptionnel au cœur de Paris.</p>
-              </div>
-            </div>
+        <!-- Carte événement simple -->
+      <div class="mb-4" style="max-width: 300px;">
+        <div class="card shadow border-secondary">
+          <img src="https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg" class="card-img-top" alt="Concert" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Concert en plein air</h5>
+            <p class="card-text">Un concert exceptionnel avec vos artistes préférés.</p>
+            <p class="text-muted mb-0"><small>Ville : Paris</small></p>
+            <p class="text-muted"><small>Date : 15 juillet 2025</small></p>
           </div>
-          <div class="col">
-            <div class="card border-secondary">
-              <img
-                src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80"
-                class="card-img-top"
-                alt="Atelier développement"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Atelier Dev</h5>
-                <p class="card-text">Apprenez React en 2 jours dans une ambiance conviviale.</p>
-              </div>
+          <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-primary btn-sm">Détails</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carte utilisateur horizontale -->
+      <div class="mb-4" style="max-width: 500px;">
+        <div class="card shadow border-secondary card-horizontal">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marie Dupont</h5>
+            <p class="card-text mb-1">Participant depuis 2023</p>
+            <p class="text-muted small">Ville : Lyon</p>
+          </div>
+        </div>
+      </div>
+      <!-- Carte événement avec prix et créateur -->
+      <div class="mb-4" style="max-width: 350px;">
+        <div class="card shadow border-secondary">
+          <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" class="card-img-top" alt="Festival" style="height: 180px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Festival d'été</h5>
+            <p class="card-text">Musique, danse et animations pour toute la famille.</p>
+            <p class="text-muted mb-1"><small>Ville : Lyon</small></p>
+            <p class="text-muted mb-1"><small>Date : 22 août 2025</small></p>
+            <p class="text-muted mb-1"><small>Prix : 30€</small></p>
+            <p class="text-muted"><small>Créateur : Jean Martin</small></p>
+          </div>
+          <div class="card-footer bg-transparent border-top-0">
+            <a href="#" class="btn btn-primary btn-sm">Détails</a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-5" />
+      <h2 class="mb-4">Les organismes : Listes de cartes</h2>
+      <!-- Liste d'événements (cartes verticales en grille) -->
+      <h4 class="mb-3">Liste d'événements</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <!-- Carte événement 1 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/7016424/pexels-photo-7016424.jpeg" class="card-img-top" alt="Concert" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Concert en plein air</h5>
+              <p class="card-text">Un concert exceptionnel avec vos artistes préférés.</p>
+              <p class="text-muted mb-0"><small>Ville : Paris</small></p>
+              <p class="text-muted"><small>Date : 15 juillet 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
             </div>
           </div>
         </div>
+        <!-- Carte événement 2 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" class="card-img-top" alt="Festival" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Festival d'été</h5>
+              <p class="card-text">Musique, danse et animations pour toute la famille.</p>
+              <p class="text-muted mb-0"><small>Ville : Lyon</small></p>
+              <p class="text-muted"><small>Date : 22 août 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte événement 3 -->
+        <div class="col">
+          <div class="card shadow h-100 border-secondary">
+            <img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg" class="card-img-top" alt="Conférence" style="height: 180px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Conférence Tech</h5>
+              <p class="card-text">Les dernières innovations technologiques expliquées.</p>
+              <p class="text-muted mb-0"><small>Ville : Toulouse</small></p>
+              <p class="text-muted"><small>Date : 10 septembre 2025</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#" class="btn btn-primary btn-sm">Détails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Liste d'utilisateurs (cartes horizontales) -->
+      <h4 class="mb-3">Liste des participants</h4>
+      <div class="d-flex flex-column gap-3">
+        <!-- Carte utilisateur 1 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Jean-Pierre Lemoine</h5>
+            <p class="card-text mb-1">Participant depuis 2022</p>
+            <p class="text-muted small">Ville : Paris</p>
+          </div>
+        </div>
+        <!-- Carte utilisateur 2 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marie Dupont</h5>
+            <p class="card-text mb-1">Participant depuis 2023</p>
+            <p class="text-muted small">Ville : Lyon</p>
+          </div>
+        </div>
+        <!-- Carte utilisateur 3 -->
+        <div class="card shadow border-secondary card-horizontal" style="max-width: 600px;">
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Utilisateur" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Marc André</h5>
+            <p class="card-text mb-1">Participant depuis 2021</p>
+            <p class="text-muted small">Ville : Marseille</p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -296,7 +436,7 @@
           <div class="col-md-6">
             <h4>Pourquoi nous choisir ?</h4>
             <p>
-              Eventbrite simplifie la création et la gestion d’événements, en ligne
+              EventProject simplifie la création et la gestion d’évènements, en ligne
               comme en présentiel.
             </p>
           </div>
@@ -305,6 +445,95 @@
               src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=500&q=80"
               alt="Présentation Eventbrite"
             />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Présentation élément avec image réelle -->
+    <section class="mb-5" id="presentation_element">
+      <h2 class="h4 mb-3">Présentation ressource (image + texte)</h2>
+      <div class="border p-3 bg-white rounded shadow-sm">
+        <!-- 🧱 Bloc Image + Infos principales -->
+        <div class="row mb-5">
+          <!-- 🖼️ Image -->
+          <div class="col-md-8">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+              alt="Image événement"
+              class="resource-image shadow-sm"
+            />
+          </div>
+
+          <!-- ℹ️ Infos importantes -->
+          <div class="col-md-4">
+            <h1 class="h3 mb-3">Atelier de cuisine méditerranéenne</h1>
+            <p><strong>Date :</strong> 5 juillet 2025</p>
+            <p><strong>Heure :</strong> 14h00 - 17h00</p>
+            <p><strong>Lieu :</strong> Lille, France</p>
+            <p><strong>Prix :</strong> 25 €</p>
+            <button class="btn btn-primary w-100 mt-3">S'inscrire</button>
+          </div>
+        </div>
+
+        <!-- 🧱 Bloc Icônes + bouton -->
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="bg-light p-3 rounded shadow-sm">
+              <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="d-flex gap-4 flex-wrap">
+                  <div class="icon-text">
+                    <i class="bi bi-people-fill text-primary"></i>
+                    <span>40 participants</span>
+                  </div>
+                  <div class="icon-text">
+                    <i class="bi bi-clock text-primary"></i>
+                    <span>Durée : 3h</span>
+                  </div>
+                  <div class="icon-text">
+                    <i class="bi bi-person text-primary"></i>
+                    <span>Organisé par : Alice Martin</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-outline-primary">Contacter l'organisateur</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🧱 Bloc Description + Infos secondaires -->
+        <div class="row mb-5">
+          <!-- 📝 Description -->
+          <div class="col-md-8">
+            <h2 class="h5 mb-3">Description</h2>
+            <p>
+              Rejoignez-nous pour un atelier culinaire unique où vous apprendrez à
+              préparer des plats méditerranéens traditionnels dans une ambiance
+              conviviale. Tous les ingrédients sont fournis et aucune expérience
+              préalable n’est nécessaire !
+            </p>
+          </div>
+
+          <!-- 📌 Infos supplémentaires -->
+          <div class="col-md-4">
+            <h2 class="h6 mb-3">Informations pratiques</h2>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-train-front"></i> Proche métro ligne 2</li>
+              <li><i class="bi bi-cup-straw"></i> Rafraîchissements inclus</li>
+              <li><i class="bi bi-shield-check"></i> Normes sanitaires respectées</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 🧱 Bloc Réseaux sociaux -->
+        <div class="text-center">
+          <h2 class="h6 mb-3">Partager l'événement</h2>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-facebook fs-4 text-primary"></i></a>
+            <a href="#"><i class="bi bi-twitter-x fs-4 text-dark"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-4 text-primary"></i></a>
+            <a href="#"><i class="bi bi-envelope fs-4 text-secondary"></i></a>
           </div>
         </div>
       </div>
